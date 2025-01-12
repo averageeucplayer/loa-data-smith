@@ -1,0 +1,62 @@
+{
+    "57": {
+        "id": 57,
+        "phaseCode": 2,
+        "isRaidCleared": true
+    },
+    "59": {
+        "id": 59,
+        "phaseCode": 2,
+        "isRaidCleared": true
+    },
+    "61": {
+        "id": 61,
+        "phaseCode": 2,
+        "isRaidCleared": true
+    },
+    "63": {
+        "id": 63,
+        "phaseCode": 2,
+        "isRaidCleared": true
+    },
+    "74": {
+        "id": 74,
+        "phaseCode": 2,
+        "isRaidCleared": true
+    },
+    "76": {
+        "id": 76,
+        "phaseCode": 2,
+        "isRaidCleared": true
+    },
+    "58": {
+        "id": 58,
+        "phaseCode": 4,
+        "isRaidCleared": false
+    },
+    "60": {
+        "id": 60,
+        "phaseCode": 4,
+        "isRaidCleared": false
+    },
+    "62": {
+        "id": 62,
+        "phaseCode": 4,
+        "isRaidCleared": false
+    },
+    "64": {
+        "id": 64,
+        "phaseCode": 4,
+        "isRaidCleared": false
+    },
+    "75": {
+        "id": 75,
+        "phaseCode": 4,
+        "isRaidCleared": false
+    },
+    "77": {
+        "id": 77,
+        "phaseCode": 4,
+        "isRaidCleared": false
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "0": {
+        "id": 0,
+        "name": "Normal"
+    },
+    "1": {
+        "id": 1,
+        "name": "Hard"
+    },
+    "2": {
+        "id": 2,
+        "name": "Inferno"
+    },
+    "3": {
+        "id": 3,
+        "name": "Challenge"
+    },
+    "4": {
+        "id": 4,
+        "name": "Solo"
+    },
+    "5": {
+        "id": 5,
+        "name": "The First"
+    },
+    "7": {
+        "id": 6,
+        "name": "Trial"
+    }
+}

@@ -1,0 +1,434 @@
+{
+    "308226": {
+        "id": 308226,
+        "raid_difficulty": {
+            "id": 7,
+            "name": "Trial"
+        }
+    },
+    "308227": {
+        "id": 308227,
+        "raid_difficulty": {
+            "id": 7,
+            "name": "Trial"
+        }
+    },
+    "308239": {
+        "id": 308239,
+        "raid_difficulty": {
+            "id": 7,
+            "name": "Trial"
+        }
+    },
+    "308339": {
+        "id": 308339,
+        "raid_difficulty": {
+            "id": 7,
+            "name": "Trial"
+        }
+    },
+    "308428": {
+        "id": 308428,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308429": {
+        "id": 308429,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308420": {
+        "id": 308420,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308410": {
+        "id": 308410,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308411": {
+        "id": 308411,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308414": {
+        "id": 308414,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308422": {
+        "id": 308422,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308424": {
+        "id": 308424,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308421": {
+        "id": 308421,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308412": {
+        "id": 308412,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308423": {
+        "id": 308423,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308426": {
+        "id": 308426,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308416": {
+        "id": 308416,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308419": {
+        "id": 308419,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308415": {
+        "id": 308415,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308437": {
+        "id": 308437,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308417": {
+        "id": 308417,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308418": {
+        "id": 308418,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308425": {
+        "id": 308425,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "308430": {
+        "id": 308430,
+        "raid_difficulty": {
+            "id": 3,
+            "name": "Challenge"
+        }
+    },
+    "30801": {
+        "id": 30801,
+        "raid_difficulty": null
+    },
+    "30802": {
+        "id": 30802,
+        "raid_difficulty": null
+    },
+    "30803": {
+        "id": 30803,
+        "raid_difficulty": null
+    },
+    "30804": {
+        "id": 30804,
+        "raid_difficulty": null
+    },
+    "30805": {
+        "id": 30805,
+        "raid_difficulty": null
+    },
+    "30806": {
+        "id": 30806,
+        "raid_difficulty": null
+    },
+    "30807": {
+        "id": 30807,
+        "raid_difficulty": null
+    },
+    "30835": {
+        "id": 30835,
+        "raid_difficulty": null
+    },
+    "37001": {
+        "id": 37001,
+        "raid_difficulty": null
+    },
+    "37002": {
+        "id": 37002,
+        "raid_difficulty": null
+    },
+    "37003": {
+        "id": 37003,
+        "raid_difficulty": null
+    },
+    "37011": {
+        "id": 37011,
+        "raid_difficulty": null
+    },
+    "37012": {
+        "id": 37012,
+        "raid_difficulty": null
+    },
+    "37021": {
+        "id": 37021,
+        "raid_difficulty": null
+    },
+    "37022": {
+        "id": 37022,
+        "raid_difficulty": null
+    },
+    "37031": {
+        "id": 37031,
+        "raid_difficulty": null
+    },
+    "37032": {
+        "id": 37032,
+        "raid_difficulty": null
+    },
+    "37041": {
+        "id": 37041,
+        "raid_difficulty": null
+    },
+    "37042": {
+        "id": 37042,
+        "raid_difficulty": null
+    },
+    "37051": {
+        "id": 37051,
+        "raid_difficulty": null
+    },
+    "37061": {
+        "id": 37061,
+        "raid_difficulty": null
+    },
+    "37071": {
+        "id": 37071,
+        "raid_difficulty": null
+    },
+    "37072": {
+        "id": 37072,
+        "raid_difficulty": null
+    },
+    "37081": {
+        "id": 37081,
+        "raid_difficulty": null
+    },
+    "37091": {
+        "id": 37091,
+        "raid_difficulty": null
+    },
+    "37092": {
+        "id": 37092,
+        "raid_difficulty": null
+    },
+    "37093": {
+        "id": 37093,
+        "raid_difficulty": null
+    },
+    "37094": {
+        "id": 37094,
+        "raid_difficulty": null
+    },
+    "37101": {
+        "id": 37101,
+        "raid_difficulty": null
+    },
+    "37102": {
+        "id": 37102,
+        "raid_difficulty": null
+    },
+    "37111": {
+        "id": 37111,
+        "raid_difficulty": null
+    },
+    "37112": {
+        "id": 37112,
+        "raid_difficulty": null
+    },
+    "37121": {
+        "id": 37121,
+        "raid_difficulty": null
+    },
+    "37122": {
+        "id": 37122,
+        "raid_difficulty": null
+    },
+    "37123": {
+        "id": 37123,
+        "raid_difficulty": null
+    },
+    "37124": {
+        "id": 37124,
+        "raid_difficulty": null
+    },
+    "308010": {
+        "id": 308010,
+        "raid_difficulty": null
+    },
+    "308011": {
+        "id": 308011,
+        "raid_difficulty": null
+    },
+    "308012": {
+        "id": 308012,
+        "raid_difficulty": null
+    },
+    "308014": {
+        "id": 308014,
+        "raid_difficulty": null
+    },
+    "308015": {
+        "id": 308015,
+        "raid_difficulty": null
+    },
+    "308016": {
+        "id": 308016,
+        "raid_difficulty": null
+    },
+    "308017": {
+        "id": 308017,
+        "raid_difficulty": null
+    },
+    "308018": {
+        "id": 308018,
+        "raid_difficulty": null
+    },
+    "308019": {
+        "id": 308019,
+        "raid_difficulty": null
+    },
+    "308020": {
+        "id": 308020,
+        "raid_difficulty": null
+    },
+    "308021": {
+        "id": 308021,
+        "raid_difficulty": null
+    },
+    "308022": {
+        "id": 308022,
+        "raid_difficulty": null
+    },
+    "308023": {
+        "id": 308023,
+        "raid_difficulty": null
+    },
+    "308024": {
+        "id": 308024,
+        "raid_difficulty": null
+    },
+    "308025": {
+        "id": 308025,
+        "raid_difficulty": null
+    },
+    "308026": {
+        "id": 308026,
+        "raid_difficulty": null
+    },
+    "308027": {
+        "id": 308027,
+        "raid_difficulty": null
+    },
+    "308028": {
+        "id": 308028,
+        "raid_difficulty": null
+    },
+    "308029": {
+        "id": 308029,
+        "raid_difficulty": null
+    },
+    "308030": {
+        "id": 308030,
+        "raid_difficulty": null
+    },
+    "308037": {
+        "id": 308037,
+        "raid_difficulty": null
+    },
+    "308039": {
+        "id": 308039,
+        "raid_difficulty": null
+    },
+    "308040": {
+        "id": 308040,
+        "raid_difficulty": null
+    },
+    "308041": {
+        "id": 308041,
+        "raid_difficulty": null
+    },
+    "308042": {
+        "id": 308042,
+        "raid_difficulty": null
+    },
+    "308043": {
+        "id": 308043,
+        "raid_difficulty": null
+    },
+    "308044": {
+        "id": 308044,
+        "raid_difficulty": null
+    },
+    "309020": {
+        "id": 309020,
+        "raid_difficulty": null
+    },
+    "30865": {
+        "id": 30865,
+        "raid_difficulty": null
+    },
+    "30866": {
+        "id": 30866,
+        "raid_difficulty": null
+    }
+}

@@ -1,0 +1,314 @@
+{
+    "188": {
+        "id": 188,
+        "name": "Berserker Technique",
+        "classId": 102,
+        "arkPassiveNodeId": 2160000
+    },
+    "125": {
+        "id": 125,
+        "name": "Mayhem",
+        "classId": 102,
+        "arkPassiveNodeId": 2160010
+    },
+    "197": {
+        "id": 197,
+        "name": "Gravity Training",
+        "classId": 103,
+        "arkPassiveNodeId": 2180010
+    },
+    "196": {
+        "id": 196,
+        "name": "Rage Hammer",
+        "classId": 103,
+        "arkPassiveNodeId": 2180000
+    },
+    "225": {
+        "id": 225,
+        "name": "Lone Knight",
+        "classId": 104,
+        "arkPassiveNodeId": 2170000
+    },
+    "224": {
+        "id": 224,
+        "name": "Combat Readiness",
+        "classId": 104,
+        "arkPassiveNodeId": 2170010
+    },
+    "283": {
+        "id": 283,
+        "name": "Blessed Aura",
+        "classId": 105,
+        "arkPassiveNodeId": 2360010
+    },
+    "282": {
+        "id": 282,
+        "name": "Judgement",
+        "classId": 105,
+        "arkPassiveNodeId": 2360000
+    },
+    "310": {
+        "id": 310,
+        "name": "Punisher",
+        "classId": 112,
+        "arkPassiveNodeId": 2450000
+    },
+    "309": {
+        "id": 309,
+        "name": "Predator",
+        "classId": 112,
+        "arkPassiveNodeId": 2450010
+    },
+    "201": {
+        "id": 201,
+        "name": "Order of the Emperor",
+        "classId": 202,
+        "arkPassiveNodeId": 2190100
+    },
+    "200": {
+        "id": 200,
+        "name": "Grace of the Empress",
+        "classId": 202,
+        "arkPassiveNodeId": 2190000
+    },
+    "199": {
+        "id": 199,
+        "name": "Communication Overflow",
+        "classId": 203,
+        "arkPassiveNodeId": 2200000
+    },
+    "198": {
+        "id": 198,
+        "name": "Master Summoner",
+        "classId": 203,
+        "arkPassiveNodeId": 2200100
+    },
+    "195": {
+        "id": 195,
+        "name": "Desperate Salvation",
+        "classId": 204,
+        "arkPassiveNodeId": 2210000
+    },
+    "194": {
+        "id": 194,
+        "name": "True Courage",
+        "classId": 204,
+        "arkPassiveNodeId": 2210100
+    },
+    "293": {
+        "id": 293,
+        "name": "Igniter",
+        "classId": 201,
+        "arkPassiveNodeId": 2370000
+    },
+    "294": {
+        "id": 294,
+        "name": "Reflux",
+        "classId": 201,
+        "arkPassiveNodeId": 2370100
+    },
+    "127": {
+        "id": 127,
+        "name": "Esoteric Skill Enhancement",
+        "classId": 302,
+        "arkPassiveNodeId": 2220100
+    },
+    "189": {
+        "id": 189,
+        "name": "First Intention",
+        "classId": 302,
+        "arkPassiveNodeId": 2220000
+    },
+    "21": {
+        "id": 21,
+        "name": "Ultimate Skill: Taijutsu",
+        "classId": 303,
+        "arkPassiveNodeId": 2230000
+    },
+    "22": {
+        "id": 22,
+        "name": "Shock Training",
+        "classId": 303,
+        "arkPassiveNodeId": 2230100
+    },
+    "23": {
+        "id": 23,
+        "name": "Energy Overflow",
+        "classId": 304,
+        "arkPassiveNodeId": 2240000
+    },
+    "24": {
+        "id": 24,
+        "name": "Robust Spirit",
+        "classId": 304,
+        "arkPassiveNodeId": 2240100
+    },
+    "25": {
+        "id": 25,
+        "name": "Pinnacle",
+        "classId": 305,
+        "arkPassiveNodeId": 2340100
+    },
+    "26": {
+        "id": 26,
+        "name": "Control",
+        "classId": 305,
+        "arkPassiveNodeId": 2340000
+    },
+    "27": {
+        "id": 27,
+        "name": "Esoteric Flurry",
+        "classId": 312,
+        "arkPassiveNodeId": 2390000
+    },
+    "28": {
+        "id": 23,
+        "name": "Deathblow",
+        "classId": 312,
+        "arkPassiveNodeId": 2390010
+    },
+    "29": {
+        "id": 29,
+        "name": "Asura's Path",
+        "classId": 313,
+        "arkPassiveNodeId": 2470100
+    },
+    "30": {
+        "id": 30,
+        "name": "Brawl King Storm",
+        "classId": 313,
+        "arkPassiveNodeId": 2470000
+    },
+    "31": {
+        "id": 31,
+        "name": "Surge",
+        "classId": 402,
+        "arkPassiveNodeId": 2250000
+    },
+    "32": {
+        "id": 32,
+        "name": "Remaining Energy",
+        "classId": 402,
+        "arkPassiveNodeId": 2250600
+    },
+    "33": {
+        "id": 33,
+        "name": "Demonic Impulse",
+        "classId": 403,
+        "arkPassiveNodeId": 2270000
+    },
+    "34": {
+        "id": 34,
+        "name": "Perfect Suppression",
+        "classId": 403,
+        "arkPassiveNodeId": 2270600
+    },
+    "35": {
+        "id": 35,
+        "name": "Lunar Voice",
+        "classId": 404,
+        "arkPassiveNodeId": 2260000
+    },
+    "36": {
+        "id": 36,
+        "name": "Hunger",
+        "classId": 404,
+        "arkPassiveNodeId": 2260600
+    },
+    "37": {
+        "id": 37,
+        "name": "Night's Edge",
+        "classId": 405,
+        "arkPassiveNodeId": 2460600
+    },
+    "38": {
+        "id": 38,
+        "name": "Full Moon Harvester",
+        "classId": 405,
+        "arkPassiveNodeId": 2460000
+    },
+    "39": {
+        "id": 39,
+        "name": "Loyal Companion",
+        "classId": 502,
+        "arkPassiveNodeId": 2280100
+    },
+    "40": {
+        "id": 40,
+        "name": "Death Strike",
+        "classId": 502,
+        "arkPassiveNodeId": 2280000
+    },
+    "41": {
+        "id": 41,
+        "name": "Enhanced Weapon",
+        "classId": 503,
+        "arkPassiveNodeId": 2290000
+    },
+    "42": {
+        "id": 42,
+        "name": "Pistoleer",
+        "classId": 503,
+        "arkPassiveNodeId": 2290100
+    },
+    "193": {
+        "id": 193,
+        "name": "Barrage Enhancement",
+        "classId": 504,
+        "arkPassiveNodeId": 2300000
+    },
+    "130": {
+        "id": 130,
+        "name": "Firepower Enhancement",
+        "classId": 504,
+        "arkPassiveNodeId": 2300100
+    },
+    "285": {
+        "id": 285,
+        "name": "Evolutionary Legacy",
+        "classId": 505,
+        "arkPassiveNodeId": 2350000
+    },
+    "284": {
+        "id": 284,
+        "name": "Arthetinean Skill",
+        "classId": 505,
+        "arkPassiveNodeId": 2350100
+    },
+    "289": {
+        "id": 289,
+        "name": "Peacemaker",
+        "classId": 512,
+        "arkPassiveNodeId": 2380000
+    },
+    "290": {
+        "id": 290,
+        "name": "Time to Hunt",
+        "classId": 512,
+        "arkPassiveNodeId": 2380100
+    },
+    "306": {
+        "id": 306,
+        "name": "Full Bloom",
+        "classId": 602,
+        "arkPassiveNodeId": 2310000
+    },
+    "305": {
+        "id": 305,
+        "name": "Recurrence",
+        "classId": 602,
+        "arkPassiveNodeId": 2310600
+    },
+    "307": {
+        "id": 307,
+        "name": "Wind Fury",
+        "classId": 603,
+        "arkPassiveNodeId": 2320000
+    },
+    "308": {
+        "id": 308,
+        "name": "Drizzle",
+        "classId": 603,
+        "arkPassiveNodeId": 2320600
+    }
+}

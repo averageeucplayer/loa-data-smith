@@ -1,0 +1,9 @@
+{
+    "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
+    "files.exclude": {
+        "**/target": true,
+    },
+    "search.exclude": {
+        
+    },
+}
