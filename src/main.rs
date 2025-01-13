@@ -12,18 +12,23 @@ pub mod macros;
 use std::collections::{HashMap, HashSet};
 use clipboard::{ClipboardProvider, ClipboardContext};
 
-use data::{json::*, models::{npc::*, skill_buff::{SkillBuffCategory, SkillBuffSetName}}};
+use data::{json::*, models::{npc::*, skill_buff::{self, SkillBuffCategory, SkillBuffSetName, SkillBuffUniqueGroup}}};
+use examples::party_skill_buffs_from_skill;
+use misc::{*};
 use models::{class::{ClassWithSkills, Classes}, cube::Cube, field_bosses::FieldBosses, npc::*, raid::{abyssal_dungeon::AbyssalDungeon, guardian_raid::{chaos_guardian_purification::PurificationLevelOne, GuardianRaid}, kazeros_raid::{self, KazerosRaid}, legion_raid::LegionRaid}, skill::{Skill, Skills}};
 use utils::*;
 
 fn main() {
-    let skills = Skills::new();
 
-    if let Some(skill) = skills.get_class_skill_by_name("Divine Justice") {
-        let skill_buff_id = RAW_SKILL_TO_SKILL_BUFF_MAP.get(&skill.id).unwrap().first().unwrap();
-        let skill_buff = RAW_SKILL_BUFF_MAP.get(&skill_buff_id);
+    // generate_skill_buff_to_skill_json("src/data/json/SkillBuffToSkill.json").unwrap;
+    // let map = generate_skill_buff_to_skill_map();
+    // let mut skill_to_skill_buff_map: HashMap<u32, HashSet<u32>> = HashMap::new();
 
-        println!("{:?}", skill)
-    }
+    // for (skill_buff_id, skill_id) in map {
+    //     skill_to_skill_buff_map.entry(skill_id).or_default().insert(skill_buff_id);
+    // }
 
+    // save_json(&skill_to_skill_buff_map, "src/data/json/SkillToSkillBuff.json").unwrap();
+
+    party_skill_buffs_from_skill();
 }

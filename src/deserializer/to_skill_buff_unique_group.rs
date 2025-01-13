@@ -8,14 +8,15 @@ where
 {
     let value = u32::deserialize(deserializer)?;
     match value {
+        0 => Ok(SkillBuffUniqueGroup::None),
         210230 => Ok(SkillBuffUniqueGroup::SupportMarking),
         101105 => Ok(SkillBuffUniqueGroup::PaladinAttackPowerBuff),
         314004 => Ok(SkillBuffUniqueGroup::ArtistAttackPowerBuff),
         101204 => Ok(SkillBuffUniqueGroup::BardAttackPowerBuff),
         368000 => Ok(SkillBuffUniqueGroup::PaladinIdentityBuff),
         212305 => Ok(SkillBuffUniqueGroup::SupportHyperAwakeningTechniqueBuff),
-        2000260 | 2000360 => Ok(SkillBuffUniqueGroup::SupportBuff),
+        2000260 | 2000360 => Ok(SkillBuffUniqueGroup::SupportEvolutionBuff),
         501 | 502 | 503 | 504 | 505 => Ok(SkillBuffUniqueGroup::DropsOfEther),
-        _ => Ok(SkillBuffUniqueGroup::Unknown),
+        id => Ok(SkillBuffUniqueGroup::Unknown(id)),
     }
 }

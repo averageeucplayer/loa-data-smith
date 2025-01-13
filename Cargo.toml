@@ -2,6 +2,7 @@
 name = "loa-data-smith"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.82.0"
 
 [dependencies]
 rustc-hash = "2.1.0"

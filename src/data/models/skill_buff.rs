@@ -1,12 +1,16 @@
+use std::{fmt, u8};
+
 use chrono::Duration;
 use serde::{Deserialize, Serialize};
 use crate::deserializer::*;
 use strum_macros::{Display, EnumString};
 
+use super::passive_option::PassiveOption;
+
 #[derive(Debug, Default, Deserialize, Clone)]
 #[serde(rename_all = "camelCase")]
 pub struct RawSkillBuff<'a> {
-    pub id: i32,
+    pub id: u32,
     #[serde(deserialize_with = "empty_str_as_none")]
     pub name: Option<&'a str>,
     #[serde(deserialize_with = "empty_string_as_none")]
@@ -19,13 +23,13 @@ pub struct RawSkillBuff<'a> {
     #[serde(rename(deserialize = "type"))]
     #[serde(deserialize_with = "to_buff_type")]
     pub buff_type: SkillBuffType,
-    pub status_effect_values: Option<Vec<i32>>,
+    // pub status_effect_values: Option<Vec<i32>>,
     pub buff_category: SkillBuffCategory,
     pub target: SkillBuffTarget,
     #[serde(deserialize_with = "to_skill_buff_unique_group")]
     pub unique_group: SkillBuffUniqueGroup,
     #[serde(rename(deserialize = "overlap"))]
-    pub overlap_flag: i32,
+    pub overlap_flag: u8,
     pub passive_options: Vec<PassiveOption>,
     #[serde(deserialize_with = "null_as_empty_u32_vec")]
     pub source_skills: Vec<u32>,
@@ -33,14 +37,31 @@ pub struct RawSkillBuff<'a> {
     pub set_name: SkillBuffSetName
 }
 
+impl<'a> RawSkillBuff<'a> {
+    pub fn has_valid_skill_for_raid(&self) -> bool {
+        matches!(self.buff_category, SkillBuffCategory::ClassSkill 
+            | SkillBuffCategory::ArkPassive 
+            | SkillBuffCategory::Identity
+            | SkillBuffCategory::Ability
+        ) && self.unique_group != SkillBuffUniqueGroup::None
+    }
+}
+
+impl<'a> fmt::Display for RawSkillBuff<'a> {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(f, "Name: {:?} Duration: {:?}", self.name.unwrap_or("Unknown"), self.duration)
+    }
+}
+
 #[derive(Debug, Default, PartialEq, Eq, Hash, Deserialize, Clone)]
 #[serde(rename_all = "lowercase")]
 pub enum SkillBuffUniqueGroup {
     #[default]
-    Unknown,
+    None,
+    Unknown(u32),
     DropsOfEther,
     SupportMarking,
-    SupportBuff,
+    SupportEvolutionBuff,
     PaladinAttackPowerBuff,
     ArtistAttackPowerBuff,
     BardAttackPowerBuff,
@@ -69,7 +90,36 @@ pub enum SkillBuffType {
     Aura,
     Freeze,
     Darkness,
-    #[serde(other)]
+    #[serde(rename = "weaken_defense")]
+    WeakenDefense,
+    #[serde(rename = "weaken_resistance")]
+    WeakenResistance,
+    #[serde(rename = "skill_damage_amplify")]
+    SkillDamageAmplify,
+    #[serde(rename = "beattacked_damage_amplify")]
+    BeattackedDamageAmplify,
+    #[serde(rename = "skill_damage_amplify_attack")]
+    SkillDamageAmplifyAttack,
+    #[serde(rename = "directional_attack_amplify")]
+    DirectionalAttackAmplify,
+    #[serde(rename = "instant_stat_amplify")]
+    InstantStatAmplify,
+    #[serde(rename = "attack_power_amplify")]
+    AttackPowerAmplify,
+    #[serde(rename = "instant_stat_amplify_by_contents")]
+    InstantStatAmplifyByContents,
+    #[serde(rename = "evolution_type_damage")]
+    EvolutionTypeDamage,
+    #[serde(rename = "move_speed_down")]
+    MoveSpeedDown,
+    #[serde(rename = "reset_cooldown")]
+    ResetCooldown,
+    #[serde(rename = "change_ai_point")]
+    ChangeAiPoint,
+    #[serde(rename = "ai_point_amplify")]
+    AiPointAmplify,
+    #[serde(rename = "increase_identity_gauge")]
+    IncreaseIdentityGauge,
     Unknown
 }
 
@@ -131,15 +181,7 @@ pub enum SkillBuffSetName {
     Destruction,
     Yearning,
     Salvation,
+    #[serde(rename = "Dazzling Twilight")]
+    DazzlingTwilight,
     Charm
-}
-
-#[derive(Debug, Default, Deserialize, Clone)]
-#[serde(rename_all = "camelCase")]
-pub struct PassiveOption {
-    #[serde(rename(deserialize = "type"))]
-    pub option_type: String,
-    pub key_stat: String,
-    pub key_index: i32,
-    pub value: i32,
 }

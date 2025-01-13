@@ -2,7 +2,7 @@ use std::{fmt, rc::Rc};
 
 use rustc_hash::FxHashMap;
 
-use crate::{data::{json::*, models::skill::{SkillGrade, SkillType}}, utils::{create_shared_class_map, create_skill_map}};
+use crate::{data::{json::*, models::{skill::{SkillGrade, SkillType}, skill_buff::*, skill_descriptor::SkillDescriptor}}, misc::*, skill::create_skill_map};
 
 use super::class::Class;
 
@@ -88,9 +88,7 @@ pub struct UnspecifiedSkill<'a> {
 #[derive(Debug, Default)]
 pub struct ClassSkill<'a> {
     pub id: u32,
-    pub is_awakening: bool,
-    pub is_hyper_awakening_technique: bool,
-    pub is_hyper_awakening: bool,
+    pub descriptor: Option<&'a SkillDescriptor>,
     pub name: Option<&'a str>,
     pub desc: Option<String>,
     pub icon: Option<&'a str>,
@@ -100,6 +98,36 @@ pub struct ClassSkill<'a> {
     pub grade: SkillGrade,
 }
 
+impl<'a> ClassSkill<'a> {
+    pub fn get_party_buffs(&self) -> Vec<RawSkillBuff> {
+        let skill_buff_ids = RAW_SKILL_TO_SKILL_BUFF_MAP.get(&self.id).cloned().unwrap_or_default();
+        let mut skill_buffs = vec![];
+
+        for skill_buff_id in skill_buff_ids {
+            let skill_buff = RAW_SKILL_BUFF_MAP.get(&skill_buff_id).cloned().unwrap();
+
+            if skill_buff.target != SkillBuffTarget::SelfParty {
+                continue;
+            }
+
+            skill_buffs.push(skill_buff);
+        }
+
+        skill_buffs
+    }
+
+    pub fn get_skill_buffs(&self) -> Vec<RawSkillBuff> {
+        let skill_buff_ids = RAW_SKILL_TO_SKILL_BUFF_MAP.get(&self.id).cloned().unwrap_or_default();
+        let mut skill_buffs = vec![];
+
+        for skill_buff_id in skill_buff_ids {
+            let skill_buff = RAW_SKILL_BUFF_MAP.get(&skill_buff_id).cloned().unwrap();
+            skill_buffs.push(skill_buff);
+        }
+
+        skill_buffs
+    }
+}
 #[derive(Debug, Default)]
 pub struct SkillWithSource<'a> {
     pub skill: Skill<'a>,

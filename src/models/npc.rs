@@ -2,7 +2,7 @@ use std::{fmt, ptr::addr_of, rc::Rc};
 use rustc_hash::FxHashMap;
 use strum_macros::{Display, EnumString};
 
-use crate::{data::json::{ESTHERS, RAW_NPC_MAP}, utils::create_struct_with_npcs, NpcGrade, NpcSpecies, NpcType};
+use crate::{data::json::{ESTHERS, RAW_NPC_MAP}, npc::create_npc_maps, NpcGrade, NpcSpecies, NpcType};
 
 pub struct Npcs {
     pub by_id: FxHashMap<u32, Npc>,
@@ -11,7 +11,7 @@ pub struct Npcs {
 
 impl Npcs {
     pub fn new() -> Self {
-        create_struct_with_npcs(
+        create_npc_maps(
             &RAW_NPC_MAP,
             &ESTHERS
         )

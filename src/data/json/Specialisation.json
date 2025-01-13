@@ -119,134 +119,134 @@
         "classId": 302,
         "arkPassiveNodeId": 2220000
     },
-    "21": {
-        "id": 21,
+    "190": {
+        "id": 190,
         "name": "Ultimate Skill: Taijutsu",
         "classId": 303,
         "arkPassiveNodeId": 2230000
     },
-    "22": {
-        "id": 22,
+    "191": {
+        "id": 191,
         "name": "Shock Training",
         "classId": 303,
         "arkPassiveNodeId": 2230100
     },
-    "23": {
-        "id": 23,
+    "256": {
+        "id": 256,
         "name": "Energy Overflow",
         "classId": 304,
         "arkPassiveNodeId": 2240000
     },
-    "24": {
-        "id": 24,
+    "257": {
+        "id": 257,
         "name": "Robust Spirit",
         "classId": 304,
         "arkPassiveNodeId": 2240100
     },
-    "25": {
-        "id": 25,
+    "276": {
+        "id": 276,
         "name": "Pinnacle",
         "classId": 305,
         "arkPassiveNodeId": 2340100
     },
-    "26": {
-        "id": 26,
+    "277": {
+        "id": 277,
         "name": "Control",
         "classId": 305,
         "arkPassiveNodeId": 2340000
     },
-    "27": {
-        "id": 27,
+    "292": {
+        "id": 292,
         "name": "Esoteric Flurry",
         "classId": 312,
         "arkPassiveNodeId": 2390000
     },
-    "28": {
-        "id": 23,
+    "291": {
+        "id": 291,
         "name": "Deathblow",
         "classId": 312,
         "arkPassiveNodeId": 2390010
     },
-    "29": {
-        "id": 29,
+    "315": {
+        "id": 315,
         "name": "Asura's Path",
         "classId": 313,
         "arkPassiveNodeId": 2470100
     },
-    "30": {
-        "id": 30,
+    "314": {
+        "id": 314,
         "name": "Brawl King Storm",
         "classId": 313,
         "arkPassiveNodeId": 2470000
     },
-    "31": {
-        "id": 31,
+    "279": {
+        "id": 279,
         "name": "Surge",
         "classId": 402,
         "arkPassiveNodeId": 2250000
     },
-    "32": {
-        "id": 32,
+    "278": {
+        "id": 278,
         "name": "Remaining Energy",
         "classId": 402,
         "arkPassiveNodeId": 2250600
     },
-    "33": {
-        "id": 33,
+    "281": {
+        "id": 281,
         "name": "Demonic Impulse",
         "classId": 403,
         "arkPassiveNodeId": 2270000
     },
-    "34": {
-        "id": 34,
+    "280": {
+        "id": 280,
         "name": "Perfect Suppression",
         "classId": 403,
         "arkPassiveNodeId": 2270600
     },
-    "35": {
-        "id": 35,
+    "287": {
+        "id": 287,
         "name": "Lunar Voice",
         "classId": 404,
         "arkPassiveNodeId": 2260000
     },
-    "36": {
-        "id": 36,
+    "286": {
+        "id": 286,
         "name": "Hunger",
         "classId": 404,
         "arkPassiveNodeId": 2260600
     },
-    "37": {
-        "id": 37,
+    "312": {
+        "id": 312,
         "name": "Night's Edge",
         "classId": 405,
         "arkPassiveNodeId": 2460600
     },
-    "38": {
-        "id": 38,
+    "311": {
+        "id": 311,
         "name": "Full Moon Harvester",
         "classId": 405,
         "arkPassiveNodeId": 2460000
     },
-    "39": {
-        "id": 39,
+    "258": {
+        "id": 258,
         "name": "Loyal Companion",
         "classId": 502,
         "arkPassiveNodeId": 2280100
     },
-    "40": {
-        "id": 40,
+    "259": {
+        "id": 259,
         "name": "Death Strike",
         "classId": 502,
         "arkPassiveNodeId": 2280000
     },
-    "41": {
-        "id": 41,
+    "129": {
+        "id": 129,
         "name": "Enhanced Weapon",
         "classId": 503,
         "arkPassiveNodeId": 2290000
     },
-    "42": {
-        "id": 42,
+    "192": {
+        "id": 192,
         "name": "Pistoleer",
         "classId": 503,
         "arkPassiveNodeId": 2290100

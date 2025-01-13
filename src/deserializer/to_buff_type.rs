@@ -15,7 +15,7 @@ where
             let value = SkillBuffType::from_str(&str.as_str()).unwrap_or_default();
             Ok(value)
         },
-        Value::Number(n) => Ok(SkillBuffType::None),
+        Value::Number(_) => Ok(SkillBuffType::None),
         _ => Err(serde::de::Error::custom("Expected an enum")),
     }
 }

@@ -5,3 +5,4 @@ pub mod class;
 pub mod adventure_tome;
 pub mod cube;
 pub mod skill;
+pub mod skill_buff;

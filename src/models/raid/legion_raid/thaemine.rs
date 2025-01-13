@@ -2,14 +2,21 @@ use crate::{create_struct_with_npcs, wrap_npc_struct};
 
 create_struct_with_npcs!(
     GateOne,
-    killineza_the_dark_worshipper => "Killineza the Dark Worshipper"
+    killineza_the_dark_worshipper => "Killineza the Dark Worshipper",
+    killineza_eye => "Killineza's Eye",
+    killinezas_organism => "Killineza's Organism",
+    tentacle_of_darkness => "Tentacle of Darkness"
 );
 
 create_struct_with_npcs!(
     GateTwo,
     valinak_knight_of_darkness => "Valinak, Knight of Darkness",
     valinak_taboo_usurper => "Valinak, Taboo Usurper",
-    valinak_herald_of_the_end => "Valinak, Herald of the End"
+    valinak_herald_of_the_end => "Valinak, Herald of the End",
+    darkness_follower => "Darkness Follower",
+    hutch_of_darkness => "Hutch of Darkness",
+    taboo_kin => "Taboo Kin",
+    dark_membrane => "Dark Membrane"
 );
 
 create_struct_with_npcs!(
