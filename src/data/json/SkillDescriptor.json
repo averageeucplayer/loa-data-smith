@@ -7,7 +7,8 @@
         "has_marking_debuff": true,
         "has_synergy_buff": false,
         "has_shield_buff": false,
-        "has_damage_reduction_buff": false
+        "has_damage_reduction_buff": false,
+        "is_heal": false
     },
     "21290": {
         "is_awakening": false,
@@ -17,7 +18,8 @@
         "has_marking_debuff": true,
         "has_synergy_buff": false,
         "has_shield_buff": false,
-        "has_damage_reduction_buff": false
+        "has_damage_reduction_buff": false,
+        "is_heal": false
     },
     "21090": {
         "is_awakening": false,
@@ -27,7 +29,8 @@
         "has_marking_debuff": true,
         "has_synergy_buff": false,
         "has_shield_buff": false,
-        "has_damage_reduction_buff": false
+        "has_damage_reduction_buff": false,
+        "is_heal": false
     },
     "21170": {
         "is_awakening": false,
@@ -37,7 +40,8 @@
         "has_marking_debuff": false,
         "has_synergy_buff": false,
         "has_shield_buff": false,
-        "has_damage_reduction_buff": false
+        "has_damage_reduction_buff": false,
+        "is_heal": false
     },
     "21160": {
         "is_awakening": false,
@@ -47,6 +51,139 @@
         "has_marking_debuff": false,
         "has_synergy_buff": false,
         "has_shield_buff": false,
-        "has_damage_reduction_buff": true
-    }   
+        "has_damage_reduction_buff": false,
+        "is_heal": false
+    },
+    "21260": {
+        "is_awakening": false,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": false,
+        "has_synergy_buff": false,
+        "has_shield_buff": false,
+        "has_damage_reduction_buff": true,
+        "is_heal": false
+    },
+    "21250": {
+        "is_awakening": false,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": false,
+        "has_synergy_buff": false,
+        "has_shield_buff": true,
+        "has_damage_reduction_buff": true,
+        "is_heal": false
+    },
+    "21070": {
+        "is_awakening": false,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": false,
+        "has_synergy_buff": false,
+        "has_shield_buff": true,
+        "has_damage_reduction_buff": false,
+        "is_heal": false
+    },
+    "21180": {
+        "is_awakening": false,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": true,
+        "has_synergy_buff": false,
+        "has_shield_buff": false,
+        "has_damage_reduction_buff": false,
+        "is_heal": false
+    },
+    "21300": {
+        "is_awakening": false,
+        "is_hyper_awakening_technique": true,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": true,
+        "has_synergy_buff": false,
+        "has_shield_buff": false,
+        "has_damage_reduction_buff": false,
+        "is_heal": false
+    },
+    "21230": {
+        "is_awakening": true,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": false,
+        "has_synergy_buff": false,
+        "has_shield_buff": true,
+        "has_damage_reduction_buff": false,
+        "is_heal": false
+    },
+    "21320": {
+        "is_awakening": true,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": true,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": false,
+        "has_synergy_buff": false,
+        "has_shield_buff": true,
+        "has_damage_reduction_buff": false,
+        "is_heal": false
+    },
+    "21130": {
+        "is_awakening": false,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": false,
+        "has_synergy_buff": false,
+        "has_shield_buff": false,
+        "has_damage_reduction_buff": false,
+        "is_heal": true
+    },
+    "21131": {
+        "is_awakening": false,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": false,
+        "has_synergy_buff": false,
+        "has_shield_buff": false,
+        "has_damage_reduction_buff": false,
+        "is_heal": true
+    },
+    "21132": {
+        "is_awakening": false,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": false,
+        "has_synergy_buff": false,
+        "has_shield_buff": false,
+        "has_damage_reduction_buff": false,
+        "is_heal": true
+    },
+    "21133": {
+        "is_awakening": false,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": false,
+        "has_synergy_buff": false,
+        "has_shield_buff": false,
+        "has_damage_reduction_buff": false,
+        "is_heal": true
+    },
+    "36080": {
+        "is_awakening": false,
+        "is_hyper_awakening_technique": false,
+        "is_hyper_awakening": false,
+        "has_attack_power_buff": false,
+        "has_marking_debuff": false,
+        "has_synergy_buff": false,
+        "has_shield_buff": true,
+        "has_damage_reduction_buff": false,
+        "is_heal": false
+    }
 }

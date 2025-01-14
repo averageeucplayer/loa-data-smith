@@ -15,6 +15,16 @@ pub struct PassiveOption {
     pub value: i32,
 }
 
+pub trait Utils {
+    fn get_value(&self) -> i32;
+}
+
+impl Utils for Vec<PassiveOption> {
+    fn get_value(&self) -> i32 {
+        self.first().unwrap().value
+    }
+}
+
 #[derive(Debug, Default, PartialEq, Eq, Hash, Deserialize, Clone)]
 #[serde(rename_all = "lowercase")]
 pub enum PassiveOptionType {

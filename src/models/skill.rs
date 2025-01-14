@@ -2,7 +2,7 @@ use std::{fmt, rc::Rc};
 
 use rustc_hash::FxHashMap;
 
-use crate::{data::{json::*, models::{skill::{SkillGrade, SkillType}, skill_buff::*, skill_descriptor::SkillDescriptor}}, misc::*, skill::create_skill_map};
+use crate::{data::{json::*, models::{skill::{SkillGrade, SkillType}, skill_buff::*, skill_descriptor::SkillDescriptor, skill_group::SkillGroup}}, misc::*, skill::create_skill_map};
 
 use super::class::Class;
 
@@ -10,7 +10,7 @@ pub struct Skills<'a> {
     pub by_name: FxHashMap<&'a str, Vec<Skill<'a>>>,
     pub by_id: FxHashMap<u32, Skill<'a>>,
     pub by_class_id: FxHashMap<u32, Vec<Skill<'a>>>,
-    pub by_group_id: FxHashMap<u32, Vec<Skill<'a>>>
+    pub by_group_id: FxHashMap<SkillGroup, Vec<Skill<'a>>>
 }
 
 impl<'a> Skills<'a> {

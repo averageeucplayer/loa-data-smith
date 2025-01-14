@@ -59,6 +59,7 @@ pub enum SkillBuffUniqueGroup {
     #[default]
     None,
     Unknown(u32),
+    Food,
     DropsOfEther,
     SupportMarking,
     SupportEvolutionBuff,
@@ -67,6 +68,24 @@ pub enum SkillBuffUniqueGroup {
     BardAttackPowerBuff,
     PaladinIdentityBuff,
     SupportHyperAwakeningTechniqueBuff
+}
+
+impl SkillBuffUniqueGroup {
+    pub fn from(value: u32) -> SkillBuffUniqueGroup {
+        match value {
+            0 => SkillBuffUniqueGroup::None,
+            80000 | 80001 | 80002 => SkillBuffUniqueGroup::Food,
+            210230 => SkillBuffUniqueGroup::SupportMarking,
+            101105 => SkillBuffUniqueGroup::PaladinAttackPowerBuff,
+            314004 => SkillBuffUniqueGroup::ArtistAttackPowerBuff,
+            101204 => SkillBuffUniqueGroup::BardAttackPowerBuff,
+            368000 => SkillBuffUniqueGroup::PaladinIdentityBuff,
+            212305 => SkillBuffUniqueGroup::SupportHyperAwakeningTechniqueBuff,
+            2000260 | 2000360 => SkillBuffUniqueGroup::SupportEvolutionBuff,
+            501 | 502 | 503 | 504 | 505 => SkillBuffUniqueGroup::DropsOfEther,
+            id => SkillBuffUniqueGroup::Unknown(id),
+        }
+    }
 }
 
 #[derive(Debug, Default, Deserialize, Clone)]

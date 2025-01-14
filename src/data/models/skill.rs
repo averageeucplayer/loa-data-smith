@@ -1,7 +1,9 @@
 use std::ptr::addr_of;
 
 use serde::{Deserialize, Serialize};
-use crate::deserializer::{null_as_empty_u32_vec, u16_zero_as_none, u32_zero_as_none};
+use crate::deserializer::*;
+
+use super::skill_group::SkillGroup;
 
 #[derive(Debug, Deserialize, Clone)]
 #[serde(rename_all = "camelCase")]
@@ -18,8 +20,8 @@ pub struct RawSkill<'a> {
     pub skill_type: SkillType,
     pub grade: SkillGrade,
     #[serde(alias = "groups")]
-    #[serde(deserialize_with = "null_as_empty_u32_vec")]
-    pub groups: Vec<u32>,
+    #[serde(deserialize_with = "to_skill_group")]
+    pub groups: Vec<SkillGroup>,
     #[serde(deserialize_with = "null_as_empty_u32_vec")]
     pub summon_source_skills: Vec<u32>,
     #[serde(deserialize_with = "null_as_empty_u32_vec")]

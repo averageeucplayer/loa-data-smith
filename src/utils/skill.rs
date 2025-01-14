@@ -1,6 +1,6 @@
 use std::{rc::Rc, str::FromStr};
 
-use data::models::skill::RawSkill;
+use data::models::{skill::RawSkill, skill_group::SkillGroup};
 use misc::vec_to_option;
 use models::{class::Class, skill::*};
 use rustc_hash::FxHashMap;
@@ -113,7 +113,7 @@ pub fn create_skill_map<'a>(
     let mut skill_by_name_map: FxHashMap<&'a str, Vec<Skill>> = FxHashMap::default();
     let mut skill_by_id_map: FxHashMap<u32, Skill> = FxHashMap::default();
     let mut skill_by_class_id_map: FxHashMap<u32, Vec<Skill>> = FxHashMap::default();
-    let mut skill_by_group_id_map: FxHashMap<u32, Vec<Skill>> = FxHashMap::default();
+    let mut skill_by_group_id_map: FxHashMap<SkillGroup, Vec<Skill>> = FxHashMap::default();
 
     for (_, raw_skill) in raw_skill_map {
         let has_summon_source = !raw_skill.summon_source_skills.is_empty();

@@ -3,10 +3,16 @@ use rustc_hash::FxHashMap;
 use crate::{create_struct_with_npcs, Npc};
 
 create_struct_with_npcs!(
+    SwordTalk,
+    possessed_soldier => "Possessed Soldier"
+);
+
+create_struct_with_npcs!(
     SilentRemnant,
     varto => "Varto",
     sol_grande => "Sol Grande",
-    jederico => "Jederico"
+    jederico => "Jederico",
+    evolved_mari => "Evolved Mari"
 );
 
 create_struct_with_npcs!(
@@ -53,6 +59,11 @@ create_struct_with_npcs!(
 );
 
 create_struct_with_npcs!(
+    NamelessElemental,
+    cube_bewitched_mage => "Cube Bewitched Mage"
+);
+
+create_struct_with_npcs!(
     ShackledAgent,
     cube_bewitched_assassin => "Cube Bewitched Assassin"
 );
@@ -72,11 +83,18 @@ create_struct_with_npcs!(
     seal_stone => "Seal Stone"  
 );
 
+create_struct_with_npcs!(
+    Plague271,
+    akkan_plague_gargoyle => "Akkan Plague Gargoyle",
+    harzal => "Harzal"
+);
+
 #[derive(Debug, Default, Clone)]
 pub struct Stub<const N: usize>{}
 
 #[derive(Debug, Default, Clone)]
 pub struct Cube<'a>(
+    pub SwordTalk<'a>,
     pub SilentRemnant<'a>,
     pub DisruptiveDissident<'a>,
     pub WorldOfMonsters<'a>,
@@ -85,26 +103,34 @@ pub struct Cube<'a>(
     pub DemonsStrength<'a>,
     pub PossessedMask<'a>,
     pub SelfishExecutioner<'a>,
+    pub NamelessElemental<'a>,
     pub ShackledAgent<'a>,
     pub CracklingFire<'a>,
     pub PhantomFragment<'a>,
-    pub ShardOfDarkness<'a>);
+    pub ShardOfDarkness<'a>,
+    pub Plague271<'a>
+);
+
+// 41 Marionette
 
 impl<'a> Cube<'a> {
     pub fn from_npc_map(npc_map: &'a FxHashMap<String, Npc>) -> Self {
         Self {
-            0: SilentRemnant::from_npc_map(npc_map), // 18
-            1: DisruptiveDissident::from_npc_map(npc_map), // 19
-            2: WorldOfMonsters::from_npc_map(npc_map), // 47
-            3: FoulOrder::from_npc_map(npc_map), // 54
-            4: PermaFrost::from_npc_map(npc_map), // 57
-            5: DemonsStrength::from_npc_map(npc_map), // 86
-            6: PossessedMask::from_npc_map(npc_map), // 93 
-            7: SelfishExecutioner::from_npc_map(npc_map), // 150
-            8: ShackledAgent::from_npc_map(npc_map), // 224
-            9: CracklingFire::from_npc_map(npc_map), // 244
-            10: PhantomFragment::from_npc_map(npc_map), // 256
-            11: ShardOfDarkness::from_npc_map(npc_map), // 263
+            0: SwordTalk::from_npc_map(npc_map), // 15
+            1: SilentRemnant::from_npc_map(npc_map), // 18
+            2: DisruptiveDissident::from_npc_map(npc_map), // 19
+            3: WorldOfMonsters::from_npc_map(npc_map), // 47
+            4: FoulOrder::from_npc_map(npc_map), // 54
+            5: PermaFrost::from_npc_map(npc_map), // 57
+            6: DemonsStrength::from_npc_map(npc_map), // 86
+            7: PossessedMask::from_npc_map(npc_map), // 93 
+            8: SelfishExecutioner::from_npc_map(npc_map), // 150
+            9: NamelessElemental::from_npc_map(npc_map), // 173
+            10: ShackledAgent::from_npc_map(npc_map), // 224
+            11: CracklingFire::from_npc_map(npc_map), // 244
+            12: PhantomFragment::from_npc_map(npc_map), // 256
+            13: ShardOfDarkness::from_npc_map(npc_map), // 263
+            14: Plague271::from_npc_map(npc_map), // 263
             ..Default::default()
         }
     }   
