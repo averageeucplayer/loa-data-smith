@@ -187,7 +187,7 @@ pub enum SkillBuffIconShowType {
     All
 }
 
-#[derive(Debug, Display, EnumString, Default, PartialEq, Eq, Hash, Deserialize, Clone)]
+#[derive(Debug, Display, EnumString, Default, PartialEq, Eq, Hash, Deserialize, Clone, Copy)]
 #[serde(rename_all = "PascalCase")]
 pub enum SkillBuffSetName {
     #[default]

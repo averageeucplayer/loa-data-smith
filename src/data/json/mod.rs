@@ -5,7 +5,7 @@ use rustc_hash::FxHashMap;
 
 use crate::{models::class::{Class, Specialisation}, RawEsther, RawNpc};
 
-use super::models::{engraving::RawEngraving, skill::RawSkill, skill_buff::RawSkillBuff, skill_descriptor::SkillDescriptor, skill_effect::RawSkillEffect};
+use super::models::{combat_effect::RawCombatEffect, engraving::RawEngraving, skill::RawSkill, skill_buff::RawSkillBuff, skill_descriptor::SkillDescriptor, skill_effect::RawSkillEffect, skill_feature::RawSkillFeatureLevel};
 
 pub static RAW_NPC_MAP: Lazy<FxHashMap<u32, RawNpc>> = Lazy::new(|| {
     let json_bytes = include_bytes!("./Npc.json");
@@ -58,6 +58,16 @@ pub static RAW_ENGRAVING_MAP: Lazy<FxHashMap<u32, RawEngraving>> = Lazy::new(|| 
     serde_json::from_slice(json_bytes).unwrap()
 });
 
+pub static RAW_COMBAT_EFFECT_MAP: Lazy<FxHashMap<u32, RawCombatEffect>> = Lazy::new(|| {
+    let json_bytes = include_bytes!("./CombatEffect.json");
+    serde_json::from_slice(json_bytes).unwrap()
+});
+
+pub static SKILL_FEATURE_MAP: Lazy<FxHashMap<u32, RawSkillFeatureLevel>> = Lazy::new(|| {
+    let json_bytes = include_bytes!("./SkillFeature.json");
+    serde_json::from_slice(json_bytes).unwrap()
+});
+
 pub static RAW_SKILL_TO_SKILL_BUFF_MAP: Lazy<FxHashMap<u32, Vec<u32>>> = Lazy::new(|| {
     let json_bytes = include_bytes!("./SkillToSkillBuff.json");
     serde_json::from_slice(json_bytes).unwrap()
@@ -72,6 +82,8 @@ pub static SKILL_DESCRIPTOR_MAP: Lazy<FxHashMap<u32, SkillDescriptor>> = Lazy::n
     let json_bytes = include_bytes!("./SkillDescriptor.json");
     serde_json::from_slice(json_bytes).unwrap()
 });
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -87,6 +99,7 @@ mod tests {
         assert_eq!(RAW_SKILL_EFFECT_MAP.len(), 84715);
         assert_eq!(RAW_ENGRAVING_MAP.len(), 249);
         assert_eq!(RAW_SPECIALISATION_MAP.len(), 52);
+        assert_eq!(RAW_COMBAT_EFFECT_MAP.len(), 52);
     }
 
 }
