@@ -8,3 +8,4 @@ pub mod passive_option;
 pub mod skill_descriptor;
 pub mod combat_effect;
 pub mod skill_feature;
+pub mod zone;

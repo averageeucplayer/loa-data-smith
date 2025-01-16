@@ -1,4 +1,4 @@
-use crate::{data::models::skill_buff::{SkillBuffCategory, SkillBuffSetName}, models::{class::{ClassWithSkills, Classes}, raid::{abyssal_dungeon::AbyssalDungeon, guardian_raid::GuardianRaid, kazeros_raid::KazerosRaid, legion_raid::LegionRaid}, skill::Skills}, Npcs, RAW_CLASS_BY_NAME_MAP, RAW_SKILL_BUFF_MAP};
+use crate::{data::models::skill_buff::{SkillBuffCategory, SkillBuffSetName}, models::{class::{ClassWithSkills, Classes}, raid::{abyssal_dungeon::AbyssalDungeon, guardian_raid::GuardianRaid, kazeros_raid::KazerosRaid, legion_raid::LegionRaid}, skill::Skills, skill_effect::SkillEffects}, Npcs, RAW_CLASS_BY_NAME_MAP, RAW_SKILL_BUFF_MAP};
 
 
 pub fn guardian_raid() {
@@ -73,4 +73,12 @@ pub fn skill_buffs() {
         .collect();
 
     println!("{:#?}", cook_buffs);
+}
+
+pub fn battle_items() {
+    let skill_effects = SkillEffects::new();
+
+    let battle_item = skill_effects.by_name.get("Dark Grenade (Bound)").unwrap();
+
+    println!("{:#?}", battle_item);
 }

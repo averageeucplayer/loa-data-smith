@@ -5,7 +5,7 @@ use rustc_hash::FxHashMap;
 
 use crate::{models::class::{Class, Specialisation}, RawEsther, RawNpc};
 
-use super::models::{combat_effect::RawCombatEffect, engraving::RawEngraving, skill::RawSkill, skill_buff::RawSkillBuff, skill_descriptor::SkillDescriptor, skill_effect::RawSkillEffect, skill_feature::RawSkillFeatureLevel};
+use super::models::{combat_effect::RawCombatEffect, engraving::RawEngraving, skill::RawSkill, skill_buff::RawSkillBuff, skill_descriptor::SkillDescriptor, skill_effect::RawSkillEffect, skill_feature::RawSkillFeatureLevel, zone::Zone};
 
 pub static RAW_NPC_MAP: Lazy<FxHashMap<u32, RawNpc>> = Lazy::new(|| {
     let json_bytes = include_bytes!("./Npc.json");
@@ -83,6 +83,10 @@ pub static SKILL_DESCRIPTOR_MAP: Lazy<FxHashMap<u32, SkillDescriptor>> = Lazy::n
     serde_json::from_slice(json_bytes).unwrap()
 });
 
+pub static ZONES_MAP: Lazy<FxHashMap<u32, Zone>> = Lazy::new(|| {
+    let json_bytes = include_bytes!("./Zones.json");
+    serde_json::from_slice(json_bytes).unwrap()
+});
 
 #[cfg(test)]
 mod tests {
