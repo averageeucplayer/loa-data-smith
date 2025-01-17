@@ -1,13 +1,8 @@
+pub mod rethramis;
+
 use rustc_hash::FxHashMap;
-
+use crate::models::adventure_tome::rethramis::Rethramis;
 use crate::{create_struct_with_npcs, Npc};
-
-
-pub struct Rethramis<'a> {
-    pub neria: &'a Npc,
-    pub siera: &'a Npc,
-    pub rudric: &'a Npc
-}
 
 pub struct Stub {
     pub monster: Box<Stub>,
@@ -15,8 +10,8 @@ pub struct Stub {
     pub bosses: Box<Stub>
 }
 
-pub struct AdventureTome {
-    pub rethramis: Stub,
+pub struct AdventureTome<'a> {
+    pub rethramis: Rethramis<'a>,
     pub yudia: Stub,
     pub west_luterra: Stub,
     pub east_luterra: Stub,

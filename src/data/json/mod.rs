@@ -73,6 +73,11 @@ pub static RAW_SKILL_TO_SKILL_BUFF_MAP: Lazy<FxHashMap<u32, Vec<u32>>> = Lazy::n
     serde_json::from_slice(json_bytes).unwrap()
 });
 
+pub static MANUAL_SKILL_TO_SKILL_BUFF_MAP: Lazy<FxHashMap<u32, Vec<u32>>> = Lazy::new(|| {
+    let json_bytes = include_bytes!("./ManualSkillToSkillBuff.json");
+    serde_json::from_slice(json_bytes).unwrap()
+});
+
 pub static RAW_SKILL_BUFF_TO_SKILL_MAP: Lazy<FxHashMap<u32, u32>> = Lazy::new(|| {
     let json_bytes = include_bytes!("./SkillBuffToSkill.json");
     serde_json::from_slice(json_bytes).unwrap()

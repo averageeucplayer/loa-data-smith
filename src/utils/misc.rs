@@ -2,10 +2,24 @@ use std::{error::Error, rc::Rc, str::FromStr};
 
 use data::models::{skill::RawSkill, skill_group::SkillGroup};
 use models::{class::Class, skill::*};
+use regex::Regex;
 use rustc_hash::FxHashMap;
 use serde::Serialize;
 
 use crate::*;
+
+pub fn extract_skill_buffs_from_description(description: &str) -> Vec<u32> {
+    let mut ids = vec![];
+    let regex = Regex::new(r"Value[A-F] (\d+)").unwrap();
+
+    for cap in regex.captures_iter(description) {
+        if let Some(value) = cap.get(1) {
+            ids.push(u32::from_str(value.as_str()).unwrap());
+        }
+    }
+
+    ids
+}
 
 pub fn create_skill_group_map() {
 

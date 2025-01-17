@@ -32,12 +32,18 @@ create_struct_with_npcs!(
     thar => "Thar"
 );
 
+create_struct_with_npcs!(
+    GateTwoTrash,
+    sneka_of_obsession => "Sneka of Obsession"
+);
+
 pub struct GateTwo<'a> {
     pub echidna: &'a Npc,
     pub desire_in_full_bloom_echidna: &'a Npc,
     pub covetus_master_echidna: &'a Npc,
     pub alcaone_the_twisted_venos: &'a Npc,
     pub agris_the_devouring_bog: &'a Npc,
+    pub trash: GateTwoTrash<'a>,
     pub esthers: GateTwoEsthers<'a>
 }
 
@@ -49,6 +55,7 @@ impl <'a> GateTwo<'a> {
             covetus_master_echidna: npc_map.get("Covetous Master Echidna").unwrap(),
             agris_the_devouring_bog: npc_map.get("Agris, the Devouring Bog").unwrap(),
             alcaone_the_twisted_venos: npc_map.get("Alcaone, the Twisted Venom").unwrap(),
+            trash: GateTwoTrash::from_npc_map(npc_map),
             esthers: GateTwoEsthers::from_npc_map(npc_map)
         }
     }   

@@ -17,6 +17,9 @@ impl<'a> SkillEffects<'a> {
 
         for (&id, raw_skill_effect) in RAW_SKILL_EFFECT_MAP.iter() {
             let skill_effect = match raw_skill_effect.effect_type {
+                SkillEffectType::Heal => {
+                    SkillEffect::Heal(id)
+                },
                 SkillEffectType::AddStatusEffect => {
                     let mut info = None;
 
@@ -66,6 +69,7 @@ pub enum SkillEffect<'a> {
     #[default]
     None,
     Unknown(u32),
+    Heal(u32),
     AddStatusEffect(u32, Option<SkillEffectInfo<'a>>),
     ThrowProjectile(u32, Option<SkillEffectInfo<'a>>),
 }

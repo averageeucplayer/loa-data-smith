@@ -1396,6 +1396,7 @@ dependencies = [
  "once_cell",
  "r2d2",
  "rand",
+ "regex",
  "reqwest",
  "rustc-hash",
  "scraper",
