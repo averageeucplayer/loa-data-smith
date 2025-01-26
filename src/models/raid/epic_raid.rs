@@ -6,12 +6,14 @@ create_struct_with_npcs!(
     vicious_argeos => "Vicious Argeos",
     ruthless_lakadroff => "Ruthless Lakadroff",
     untrue_crimson_yoho => "Untrue Crimson Yoho",
-    despicable_skolakia => "Despicable Skolakia"
+    despicable_skolakia => "Despicable Skolakia",
+    tornado => "Tornado"
 );
 
 create_struct_with_npcs!(
     GateTwo,
-    behemoth_cruel_storm_slayer => "Behemoth, Cruel Storm Slayer"
+    behemoth_cruel_storm_slayer => "Behemoth, Cruel Storm Slayer",
+    tornado => "Tornado"
 );
 
 wrap_npc_struct!(BehemothTheStormCommander,

@@ -1,5 +1,12 @@
 use crate::{create_struct_with_npcs, wrap_npc_struct};
 
+
+create_struct_with_npcs!(
+    TrashMobs,
+    mutated_regulator => "Mutated Regulator"
+);
+
+
 create_struct_with_npcs!(
     GateOne,
     griefbringer_maurug => "Griefbringer Maurug",
@@ -23,6 +30,7 @@ create_struct_with_npcs!(
 
 wrap_npc_struct!(Akkan,
 {
+    trash_mobs: TrashMobs<'a>,
     normal: AkkanNormal<'a>,
     hard: AkkanHard<'a>
 });

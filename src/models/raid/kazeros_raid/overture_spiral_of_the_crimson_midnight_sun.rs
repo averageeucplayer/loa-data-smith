@@ -12,6 +12,7 @@ create_struct_with_npcs!(
 pub struct GateOne<'a> {
     pub red_doom_narkiel: &'a Npc, 
     pub agris: &'a Npc,
+    pub crimson_gorgon: &'a Npc,
     pub esthers: GateOneEsthers<'a>
 }
  
@@ -20,6 +21,7 @@ impl <'a> GateOne<'a> {
         Self {
             red_doom_narkiel: npc_map.get("Red Doom Narkiel").unwrap(),
             agris: npc_map.get("Agris").unwrap(),
+            crimson_gorgon: npc_map.get("Crimson Gorgon").unwrap(),
             esthers: GateOneEsthers::from_npc_map(npc_map)
         }
     }   
@@ -34,11 +36,14 @@ create_struct_with_npcs!(
 
 create_struct_with_npcs!(
     GateTwoTrash,
-    sneka_of_obsession => "Sneka of Obsession"
+    sneka_of_obsession => "Sneka of Obsession",
+    sneka_of_greed => "Sneka of Greed",
+    soul_eaten_by_greed => "Soul Eaten by Greed"
 );
 
 pub struct GateTwo<'a> {
     pub echidna: &'a Npc,
+    pub mirror_of_projection: &'a Npc,
     pub desire_in_full_bloom_echidna: &'a Npc,
     pub covetus_master_echidna: &'a Npc,
     pub alcaone_the_twisted_venos: &'a Npc,
@@ -51,6 +56,7 @@ impl <'a> GateTwo<'a> {
     pub fn from_npc_map(npc_map: &'a FxHashMap<String, Npc>) -> Self {
         Self {
             echidna: npc_map.get("Echidna").unwrap(),
+            mirror_of_projection: npc_map.get("Mirror of Projection").unwrap(),
             desire_in_full_bloom_echidna: npc_map.get("Desire in Full Bloom, Echidna").unwrap(),
             covetus_master_echidna: npc_map.get("Covetous Master Echidna").unwrap(),
             agris_the_devouring_bog: npc_map.get("Agris, the Devouring Bog").unwrap(),

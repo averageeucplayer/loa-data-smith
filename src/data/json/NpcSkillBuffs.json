@@ -1,7 +1,12 @@
 {
     "Griefbringer Maurug": [424960004],
-    "Killineza the Dark Worshipper": [426599204],
-    "Red Doom Narkiel": [426070070, 540103, 540106, 540102],
-    "Agris": [413830521]
+    "Killineza the Dark Worshipper": [426599204, 426590083, 426590085],
+    "Red Doom Narkiel": [426070070, 540103, 540106, 540102, 426870503, 413830161, 413830162, 413830121, 426870402, 426870710],
+    "Agris": [413830521],
+    "Narok the Butcher": [],
+    "Argeos": [413914302],
+    "Behemoth, Cruel Storm Slayer": [427261101, 427261102, 427261103, 427261203, 427261201, 427261205],
+    "Aegir, the Oppressor": [427383623],
+    "Akkan, Lord of Death": [426510214, 427360013]
 
 }
