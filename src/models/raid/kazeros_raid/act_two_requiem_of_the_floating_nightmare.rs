@@ -9,8 +9,18 @@ create_struct_with_npcs!(
     ephernia => "Ephernia"
 );
 
+create_struct_with_npcs!(
+    GateOneTrashMobs,
+    phantom_summoner => "Phantom Smmoner",
+    hallucination_follower => "Hallucination Follower",
+    hallucination_crystal_demon => "Hallucination Crystal Demon",
+    hideya_the_despot => "Hideya the Despot"
+);
+
+
 pub struct GateOne<'a> {
     pub narok_the_butcher: &'a Npc,
+    pub trash_mobs: GateOneTrashMobs<'a>,
     pub esthers: GateOneEsthers<'a>
 }
 
@@ -18,6 +28,7 @@ impl <'a> GateOne<'a> {
     pub fn from_npc_map(npc_map: &'a FxHashMap<String, Npc>) -> Self {
         Self {
             narok_the_butcher: npc_map.get("Narok the Butcher",).unwrap(),
+            trash_mobs: GateOneTrashMobs::from_npc_map(npc_map),
             esthers: GateOneEsthers::from_npc_map(npc_map),
         }
     }   

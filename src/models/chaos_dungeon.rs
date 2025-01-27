@@ -26,6 +26,7 @@ create_struct_with_npcs!(
     phantom_legion_visilia => "Phantom Legion Visilia",
     phantom_legion_summoner => "Phantom Legion Summoner",
     phantom_legion_knight => "Phantom Legion Knight",
+    phantom_legion_king => "Phantom Legion King",
     phantom_legion_rook => "Phantom Legion Rook",
     phantom_legion_bishop => "Phantom Legion Bishop"
 );
@@ -42,7 +43,10 @@ create_struct_with_npcs!(
     mayhem_legion_cursed_doll => "Mayhem Legion Cursed Doll",
     mayhem_legion_warrior => "Mayhem Legion Warrior",
     mayhem_legion_corpse_tailor => "Mayhem Legion Corpse Tailor",
-    mayhem_legion_hecate => "Mayhem Legion Hecate"
+    mayhem_legion_hecate => "Mayhem Legion Hecate",
+    mayhem_legion_mayhem_pest => "Mayhem Legion Mayhem Pest",
+    mayhem_legion_crackcrick => "Mayhem Legion Crackcrick",
+    mayhem_legion_shazlik => "Mayhem Legion Shazlik"
 );
 
 create_struct_with_npcs!(
@@ -54,7 +58,12 @@ create_struct_with_npcs!(
     plague_legion_demon_dog => "Plague Legion Demon Dog",
     plague_legion_mutant => "Plague Legion Mutant",
     plague_legion_tazkul => "Plague Legion Tazkul",
-    plague_legion_madrigos => "Plague Legion Madrigos"
+    plague_legion_madrigos => "Plague Legion Madrigos",
+    plague_legion_magdoff => "Plague Legion Magdoff",
+    plague_legion_bartuk => "Plague Legion Bartuk",
+    plague_legion_gelok => "Plague Legion Gelok",
+    plague_legion_worm_fist => "Plague Legion Worm Fist",
+    plague_legion_nimble_flesh => "Plague Legion Nimble Flesh"
 );
 
 create_struct_with_npcs!(
@@ -65,4 +74,85 @@ create_struct_with_npcs!(
     skolakia_eroded_by_miasma => "Skolakia Eroded by Miasma",
     argeos_eroded_by_miasma => "Argeos Eroded by Miasma",
     enkalitus_eroded_by_miasma => "Enkalitus Eroded by Miasma"
+);
+
+
+create_struct_with_npcs!(
+    Telpa,
+    telpa_captain => "Telpa Captain",
+    sawtooth_rat => "Sawtooth Rat",
+    telpa_worker => "Telpa Worker",
+    telpa_explosive_worker => "Telpa Explosive Expert",
+    corrupted_tunnel_rat =>  "Corrupted Tunnel Rat",
+    telpa_shield_lancer =>  "Telpa Shield Lancer",
+    shade_rictus => "Shade Rictus"
+);
+
+create_struct_with_npcs!(
+    Goblin,
+    goblin => "Goblin",
+    goblin_shielder => "Goblin Shielder",
+    goblin_peltast => "Goblin Peltast",
+    axe_ielding_nurt => "Axe-Wielding Nurt",
+    fire_dokkaebi => "Fire Dokkaebi"
+);
+
+create_struct_with_npcs!(
+    Elgacia,
+    foul_swordfighter => "Foul Swordfighter",
+    foul_soldier => "Foul Soldier",
+    foul_knight => "Foul Knight",
+    foul_archer => "Foul Archer",
+    foul_construct => "Foul Construct",
+    foul_bayul => "Foul Bayul",
+    foul_elver => "Foul Elver",
+    foul_skyshadow => "Foul Skyshadow",
+    foul_ryucrokota => "Foul Ryucrokota"
+);
+
+create_struct_with_npcs!(
+    Punika,
+    ant => "Ant",
+    desert_ant => "Desert Ant",
+    giant_soldier_ant => "Giant Soldier Ant",
+    desert_ant_queen => "Desert Ant Queen"
+);
+
+create_struct_with_npcs!(
+    Forest,
+    mutant_mushroom => "Mutant Mushroom",
+    root_talker => "Root Stalker",
+    blue_spore => "Blue Spore",
+    ominous_poison_thorn_mandrake => "Ominous Poison Thorn Mandrake"
+);
+
+
+create_struct_with_npcs!(
+    ElzowinShade,
+    large_cave_slime => "Large Cave Slime",
+    mandrake => "Mandrake",
+    poison_thorn_mandrake => "Poison Thorn Mandrake",
+    spore => "Spore",
+    root_stalker => "Root Stalker",
+    treant => "Treant",
+    forest_avizagura => "Forest Avizagura",
+    scarlet_bubble_slime => "Scarlet Bubble Slime"
+);
+
+create_struct_with_npcs!(
+    Demon,
+    demon_dog => "Demon Dog",
+    evolved_demon_dog => "Evolved Demon Dog",
+    gargoyle => "Gargoyle",
+    dark_warrior => "Dark Warrior",
+    admos => "Admos",
+    kalmaris => "Kalmaris"
+);
+
+create_struct_with_npcs!(
+    SouthVern,
+    black_knights_soldier => "Black Knights Soldier",
+    black_knights_hound => "Black Knights Hound",
+    black_knights_insect_knight => "Black Knights Insect Knight",
+    black_knights_insect_soldier => "Black Knights Insect Soldier"
 );

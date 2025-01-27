@@ -13,6 +13,11 @@ create_struct_with_npcs!(
 );
 
 create_struct_with_npcs!(
+    WickedStrength,
+    enforcer_jago => "Enforcer Jago"
+);
+
+create_struct_with_npcs!(
     TrialRemnant,
     kohinorr => "Kohinorr",
     agherun => "Agherun",
@@ -60,7 +65,12 @@ create_struct_with_npcs!(
     aide_seto => "Aide Seto",
     tarsila => "Tarsila",
     paromensa => "Paromensa",
-    ark_guardian_cccel => "Ark Guardian Occel"
+    ark_guardian_cccel => "Ark Guardian Occel",
+    darkness_legion_amaus =>  "Darkness Legion Amaus",
+    phantom_legion_king => "Phantom Legion King",
+    kyzra => "Kyzra",
+    guardian_tir => "Guardian Tir",
+    nakshun => "Nakshun"
 );
 
 create_struct_with_npcs!(
@@ -70,7 +80,9 @@ create_struct_with_npcs!(
 
 create_struct_with_npcs!(
     MercenaryOfDarkness,
-    blood_swordfighter => "Blood Swordfighter"
+    blood_swordfighter => "Blood Swordfighter",
+    elite_blood_lancer => "Elite Blood Lancer",
+    guard_captain_valdubal => "Guard Captain Valdubal"
 );
 
 create_struct_with_npcs!(
@@ -78,6 +90,20 @@ create_struct_with_npcs!(
     jederico => "Jederico",
     phantom_legion_rook => "Phantom Legion Rook",
     harzal => "Harzal"
+);
+
+create_struct_with_npcs!(
+    Brigand,
+    brigand => "Brigand",
+    phantom_legion_rook => "Brigand Boss"
+);
+
+create_struct_with_npcs!(
+    SwordsOfChanghun,
+    hari => "Hari",
+    hodon => "Hodon",
+    gumga => "Gumga",
+    habeck => "Habeck"
 );
 
 create_struct_with_npcs!(
@@ -120,6 +146,13 @@ create_struct_with_npcs!(
 );
 
 create_struct_with_npcs!(
+    IronGiant,
+    giant_puppet_machine => "Giant Puppet Machine",
+    iron_giant => "Iron Giant",
+    commander_sol => "Commander Sol"
+);
+
+create_struct_with_npcs!(
     Marionette,
     stella => "Stella",
     liru => "Liru",
@@ -158,6 +191,11 @@ create_struct_with_npcs!(
 create_struct_with_npcs!(
     UndergroundKnights,
     telpa_captain => "Telpa Captain"
+);
+
+create_struct_with_npcs!(
+    MutatedAnimal,
+    mutated_gorilla => "Mutated Gorilla"
 );
 
 create_struct_with_npcs!(
@@ -222,6 +260,11 @@ create_struct_with_npcs!(
 );
 
 create_struct_with_npcs!(
+    PlainOrder,
+    antonio => "Antonio"
+);
+
+create_struct_with_npcs!(
     HoneyComb,
     hybee_scout => "Hybee Scout",
     hybee_guard => "Hybee Guard"
@@ -241,6 +284,11 @@ create_struct_with_npcs!(
 create_struct_with_npcs!(
     SwordPossessedLady,
     kyzra => "Kyzra"
+);
+
+create_struct_with_npcs!(
+    SwordOfPurification,
+    sword_of_corruption_lir => "Sword of Corruption, Lir"
 );
 
 create_struct_with_npcs!(
@@ -280,6 +328,11 @@ create_struct_with_npcs!(
 );
 
 create_struct_with_npcs!(
+    LandOfFlames,
+    ephernia => "Ephernia"
+);
+
+create_struct_with_npcs!(
     PossessedMask,
     ren => "Ren",
     pehta => "Pehta",
@@ -300,6 +353,7 @@ create_struct_with_npcs!(
 
 create_struct_with_npcs!(
     CubesFortune,
+    full_giant_slime => "Full Giant Slime",
     greedy_tuturi => "Greedy Tuturi",
     lost_tooki_king => "Lost Tooki King"
 );
@@ -321,8 +375,15 @@ create_struct_with_npcs!(
 );
 
 create_struct_with_npcs!(
+    SwordOfOrder,
+    sacrian_holy_knight_osphere => "Sacrian Holy Knight Osphere",
+    sacrian_executioner_revellos => "Sacrian Executioner Revellos"
+);
+
+create_struct_with_npcs!(
     LightKnight,
-    light_archon => "Light Archon"
+    light_archon => "Light Archon",
+    solar_guardian => "Solar Guardian"
 );
 
 create_struct_with_npcs!(
@@ -357,8 +418,19 @@ create_struct_with_npcs!(
 );
 
 create_struct_with_npcs!(
+    WingsAndArmor,
+    kayangado_recon => "Kayangado Recon",
+    creature_construct => "Creature Construct"
+);
+
+create_struct_with_npcs!(
     SelfishExecutioner,
     avesta_assassin => "Avesta Assassin"
+);
+
+create_struct_with_npcs!(
+    FoulJudgment,
+    archbishop_antonio => "Archbishop Antonio"
 );
 
 create_struct_with_npcs!(
@@ -393,9 +465,29 @@ create_struct_with_npcs!(
 );
 
 create_struct_with_npcs!(
+    NamelessElement,
+    cube_bewitched_mage => "Cube Bewitched Mage"
+);
+
+create_struct_with_npcs!(
     IllegallyModifiedHuman,
     redeye_gunner => "Redeye Gunner",
     personal_guard_soldier => "Personal Guard Soldier"
+);
+
+create_struct_with_npcs!(
+    FrenziedGuardian,
+    chaotic_chuo => "Chaotic Chuo"
+);
+
+create_struct_with_npcs!(
+    RecklessPredator,
+    velkan => "Velkan"
+);
+
+create_struct_with_npcs!(
+    ArrowOfAvarice,
+    luterran_knight => "Luterran Knight"
 );
 
 create_struct_with_npcs!(
@@ -421,12 +513,23 @@ create_struct_with_npcs!(
 
 create_struct_with_npcs!(
     ForbiddenMagickCreature,
-    maneth => "Magmadon"
+    magmadon => "Magmadon"
+);
+
+create_struct_with_npcs!(
+    RustyMagickBullet,
+    cube_bewitched_gunner => "Cube Bewitched Gunner"
 );
 
 create_struct_with_npcs!(
     ExquisiteHomunculus,
     homunculus => "Homunculus"
+);
+
+create_struct_with_npcs!(
+    TheHeaviestGem,
+    kohinorr => "Kohinorr",
+    veloran_construct => "Veloran Construct"
 );
 
 create_struct_with_npcs!(
@@ -436,6 +539,11 @@ create_struct_with_npcs!(
 
 create_struct_with_npcs!(
     ShackledAgent,
+    cube_bewitched_assassin => "Cube Bewitched Assassin"
+);
+
+create_struct_with_npcs!(
+    ShackledJudgment,
     cube_bewitched_assassin => "Cube Bewitched Assassin"
 );
 
@@ -487,7 +595,9 @@ create_struct_with_npcs!(
 
 create_struct_with_npcs!(
     ShardOfDarkness,
-    seal_stone => "Seal Stone"
+    seal_stone => "Seal Stone",
+    chaotik_zaika => "Chaotik Zaika",
+    jederico => "Jederico"
 );
 
 create_struct_with_npcs!(
@@ -499,7 +609,10 @@ create_struct_with_npcs!(
 
 create_struct_with_npcs!(
     CovetousShard,
-    seal_stone => "Seal Stone"
+    seal_stone => "Seal Stone",
+    miru => "Miru",
+    tama => "Tama",
+    rotting_bloodworm => "Rotting Bloodworm"
 );
 
 #[derive(Debug, Default)]
@@ -509,7 +622,10 @@ pub struct Cube<'a> {
 
 impl<'a> Cube<'a> {
     pub fn from_npc_map(npc_map: &'a FxHashMap<String, Npc>) -> Self {
+        CubesFortune::from_npc_map(npc_map); // 2
+        CubesFortune::from_npc_map(npc_map); // 3
         HumanHunter::from_npc_map(npc_map); // 10
+        WickedStrength::from_npc_map(npc_map); // 13
         TrialRemnant::from_npc_map(npc_map); // 14
         SwordTalk::from_npc_map(npc_map); // 15
         KingsShadow::from_npc_map(npc_map); // 16
@@ -519,6 +635,8 @@ impl<'a> Cube<'a> {
         MercenaryDownfall::from_npc_map(npc_map); // 21
         MercenaryOfDarkness::from_npc_map(npc_map); // 24
         EternalRemnant::from_npc_map(npc_map); // 25
+        Brigand::from_npc_map(npc_map); // 26
+        SwordsOfChanghun::from_npc_map(npc_map); // 29
         BorderSenitel::from_npc_map(npc_map); // 30
         ShardOfDarkness::from_npc_map(npc_map); // 31
         BackdoorDeal::from_npc_map(npc_map); // 33
@@ -526,6 +644,7 @@ impl<'a> Cube<'a> {
         AncestorsFury::from_npc_map(npc_map); // 36
         SpiritOfGold::from_npc_map(npc_map); // 37
         ShackledCovetusScale::from_npc_map(npc_map); // 39
+        IronGiant::from_npc_map(npc_map); // 40
         Marionette::from_npc_map(npc_map); // 41
         ReplicatedMachine::from_npc_map(npc_map); // 45
         QueensKnight::from_npc_map(npc_map); // 46
@@ -539,27 +658,33 @@ impl<'a> Cube<'a> {
         RebelliousRenegade::from_npc_map(npc_map); // 60
         ARollingStone::from_npc_map(npc_map); // 61
         FireElemental::from_npc_map(npc_map); // 64
+        PlainOrder::from_npc_map(npc_map); // 65
         HoneyComb::from_npc_map(npc_map); // 66
         TowerSpirit::from_npc_map(npc_map); // 69
         ShinyTail::from_npc_map(npc_map); // 70
         SwordPossessedLady::from_npc_map(npc_map); // 73
+        SwordOfPurification::from_npc_map(npc_map); // 75
         Cobwebs::from_npc_map(npc_map); // 75
         SteelTongs::from_npc_map(npc_map); // 77
         AshenRemnants::from_npc_map(npc_map); // 78
         TemperatureOfDespair::from_npc_map(npc_map); // 80
         AncientHomunculus::from_npc_map(npc_map); // 83
+        LandOfFlames::from_npc_map(npc_map); // 85
         DemonsStrength::from_npc_map(npc_map); // 86
         TaintedGold::from_npc_map(npc_map); // 87
         FourLeggedWeapon::from_npc_map(npc_map); // 88
         UndergroundKnights::from_npc_map(npc_map); // 89
+        MutatedAnimal::from_npc_map(npc_map); // 91
         PossessedMask::from_npc_map(npc_map); // 93 
         OutragedElemental::from_npc_map(npc_map); // 96 
         CubesGiantFortune::from_npc_map(npc_map); // 101
         CubesFortune::from_npc_map(npc_map); // 102
+        CubesFortune::from_npc_map(npc_map); // 104
         CubesFortune::from_npc_map(npc_map); // 105
         SinfulExpressions::from_npc_map(npc_map); // 111
         WrigglingMalice::from_npc_map(npc_map); // 115
         MadGiggle::from_npc_map(npc_map); // 116
+        SwordOfOrder::from_npc_map(npc_map); // 117
         LightKnight::from_npc_map(npc_map); // 124
         FerociousDogs::from_npc_map(npc_map); // 126
         UnpopularCarnival::from_npc_map(npc_map); // 127
@@ -567,22 +692,33 @@ impl<'a> Cube<'a> {
         Knightfall::from_npc_map(npc_map); // 137
         BladeOfFaith::from_npc_map(npc_map); // 138
         LostIntegrity::from_npc_map(npc_map); // 145
+        WingsAndArmor::from_npc_map(npc_map); // 148
         SelfishExecutioner::from_npc_map(npc_map); // 150
+        FoulJudgment::from_npc_map(npc_map); // 151
         LostSoul::from_npc_map(npc_map); // 153
         VengefulMayhem::from_npc_map(npc_map); // 161
         WickedAdventurer::from_npc_map(npc_map); // 166
         NamelessElemental::from_npc_map(npc_map); // 173
         ExecutionerOfRebelliousLight::from_npc_map(npc_map); // 175
         PoisonousFlower::from_npc_map(npc_map); // 176
+        NamelessElement::from_npc_map(npc_map); // 181
         IllegallyModifiedHuman::from_npc_map(npc_map); // 184
+        FrenziedGuardian::from_npc_map(npc_map); // 189
+        RecklessPredator::from_npc_map(npc_map); // 190
+        ArrowOfAvarice::from_npc_map(npc_map); // 194
         SteelHeart::from_npc_map(npc_map); // 195
         SanguinarySorcery::from_npc_map(npc_map); // 198
         SorrowfulWitch::from_npc_map(npc_map); // 199
+        CubesFortune::from_npc_map(npc_map); // 203
         CubesFortune::from_npc_map(npc_map); // 204
+        CubesFortune::from_npc_map(npc_map); // 205
         FrozenMace::from_npc_map(npc_map); // 211
         ForbiddenMagickCreature::from_npc_map(npc_map); // 216
+        RustyMagickBullet::from_npc_map(npc_map); // 217
         ExquisiteHomunculus::from_npc_map(npc_map); // 221
+        TheHeaviestGem::from_npc_map(npc_map); // 223
         ShackledAgent::from_npc_map(npc_map); // 224
+        ShackledJudgment::from_npc_map(npc_map); // 228
         ShackledDemon::from_npc_map(npc_map); // 230
         FloweringBeast::from_npc_map(npc_map); // 234
         SweetVoice::from_npc_map(npc_map); // 237
