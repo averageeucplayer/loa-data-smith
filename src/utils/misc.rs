@@ -241,3 +241,39 @@ pub fn save_json<T>(data: &T, output: &str) -> Result<(), Box<dyn Error>>
 
     Ok(())
 }
+
+pub fn remove_html_tags(text: &str) -> String {
+    let re = Regex::new(r"<FONT COLOR='#.*?'>(.*?)</FONT>").unwrap();
+    re.replace_all(text, "$1").to_string()
+}
+
+pub fn save_hyper_awakening_technique_skills() {
+    let hyper_awakening_technique_skills: Vec<_> = RAW_SKILL_MAP
+        .iter()
+        .filter(|(id, sk)|  sk.grade == SkillGrade::Super)
+        .map(|(id, pr)| pr.name.map(|_| id))
+        .collect();
+
+    save_json(&hyper_awakening_technique_skills, "src/data/json/HyperAwakeningTechniqueSkillIds.json").unwrap();
+}
+
+pub fn save_awakening_skills() {
+    
+    let mut grouped_by_class: HashMap<u32, Vec<u32>> = HashMap::new();
+    let awakening_skills: Vec<_> = RAW_SKILL_MAP
+        .iter()
+        .filter(|(id, sk)| sk.grade == SkillGrade::Awakening && sk.name.is_some())
+        .collect();
+
+    for (id, skill) in awakening_skills.iter() {
+        grouped_by_class.entry(skill.class_id.unwrap()).or_default().push(**id);
+    }
+
+    for (_, group) in grouped_by_class.iter_mut() {
+        group.truncate(group.len().saturating_sub(2));
+    }
+
+    let awakening_skills: Vec<u32> = grouped_by_class.values().flat_map(|group| group.iter()).cloned().collect();
+
+    save_json(&awakening_skills, "src/data/json/AwakeningSkillIds.json").unwrap();
+}

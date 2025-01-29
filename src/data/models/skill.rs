@@ -46,7 +46,7 @@ pub enum SkillType {
     Moving,
 }
 
-#[derive(Debug, Default, Deserialize, Copy, Clone)]
+#[derive(Debug, Default, Deserialize, PartialEq, Eq, Copy, Clone)]
 #[serde(rename_all = "lowercase")]
 pub enum SkillGrade {
     #[default]

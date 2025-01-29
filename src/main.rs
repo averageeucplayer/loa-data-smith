@@ -12,38 +12,51 @@ pub mod macros;
 use std::collections::{HashMap, HashSet};
 use clipboard::{ClipboardProvider, ClipboardContext};
 
-use data::{json::*, models::{npc::*, skill::RawSkill, skill_buff::{self, SkillBuffCategory, SkillBuffSetName, SkillBuffUniqueGroup}, zone::Zone}};
+use data::{json::*, models::{npc::*, skill::{RawSkill, SkillGrade}, skill_buff::{self, SkillBuffCategory, SkillBuffSetName, SkillBuffUniqueGroup}, zone::Zone}};
 use examples::party_skill_buffs_from_skill;
 use misc::{*};
 use models::{class::{ClassWithSkills, Classes}, cube::Cube, field_bosses::FieldBosses, npc::*, raid::{abyssal_dungeon::AbyssalDungeon, guardian_raid::{chaos_guardian_purification::PurificationLevelOne, GuardianRaid}, kazeros_raid::{self, KazerosRaid}, legion_raid::LegionRaid}, skill::{Skill, Skills}, skill_buff::{SkillBuff, SkillBuffs}, skill_effect::SkillEffects};
 use rustc_hash::FxHashMap;
 use serde::Serialize;
-use utils::*;
+use utils::{skill_group::save_skill_descriptor, *};
 use web_scrapper::{DefaultLostArkCodexWebScrapper, LostArkCodexWebScrapper};
 
 fn main() {
     // examples::battle_items();
 
-    let web_scrapper = DefaultLostArkCodexWebScrapper::new();
+    save_skill_descriptor();
 
-    // let zone_name = web_scrapper.get_zone_name(37511).unwrap();
-    let mut new_zones: FxHashMap<u32, Zone> = FxHashMap::default();
+    // println!("{:#?}", hyper_awakening_technique_skills);
+
+    // let mut awakening_skills: Vec<_> = RAW_SKILL_MAP
+    //     .iter()
+    //     .filter(|(id, sk)|  sk.grade == SkillGrade::Awakening && sk.class_id.filter(|id| *id == 105).is_some())
+    //     .filter_map(|(id, pr)| pr.name.map(|name| (id, name)))
+    //     .collect();
+
+    // awakening_skills.sort_unstable_by(|a, b| a.0.cmp(b.0));
+    // println!("{:#?}", awakening_skills);
+
+    // let web_scrapper = DefaultLostArkCodexWebScrapper::new();
+
+    // // let zone_name = web_scrapper.get_zone_name(37511).unwrap();
+    // let mut new_zones: FxHashMap<u32, Zone> = FxHashMap::default();
     
-    for (id, zone) in ZONES_MAP.iter() {
-        let zone_name = web_scrapper.get_zone_name(*id).unwrap();
+    // for (id, zone) in ZONES_MAP.iter() {
+    //     let zone_name = web_scrapper.get_zone_name(*id).unwrap();
 
-        if let Some(zone_name) = zone_name.as_ref() {
-            println!("id: {} name: {}", id, zone_name);
-        }
+    //     if let Some(zone_name) = zone_name.as_ref() {
+    //         println!("id: {} name: {}", id, zone_name);
+    //     }
 
-        new_zones.entry(*id).or_insert_with(move || {
-            Zone {
-                id: *id,
-                name: zone_name.map(|zone| zone),
-                raid_difficulty: zone.raid_difficulty.clone()
-            }
-        });
-    }
+    //     new_zones.entry(*id).or_insert_with(move || {
+    //         Zone {
+    //             id: *id,
+    //             name: zone_name.map(|zone| zone),
+    //             raid_difficulty: zone.raid_difficulty.clone()
+    //         }
+    //     });
+    // }
 
     // let skill_feature = SKILL_FEATURE_MAP.get(&31200).unwrap();
 

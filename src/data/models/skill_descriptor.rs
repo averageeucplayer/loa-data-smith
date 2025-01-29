@@ -2,6 +2,8 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize, Default)]
 pub struct SkillDescriptor {
+    pub name: Option<String>,
+    pub class_name: Option<String>,
     pub is_identity: bool,
     pub is_awakening: bool,
     pub is_hyper_awakening_technique: bool,

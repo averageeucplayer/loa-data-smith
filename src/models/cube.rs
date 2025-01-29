@@ -70,7 +70,9 @@ create_struct_with_npcs!(
     phantom_legion_king => "Phantom Legion King",
     kyzra => "Kyzra",
     guardian_tir => "Guardian Tir",
-    nakshun => "Nakshun"
+    nakshun => "Nakshun",
+    guardian_eolh => "Guardian Eolh",
+    nazan => "Nazan"
 );
 
 create_struct_with_npcs!(
@@ -89,7 +91,10 @@ create_struct_with_npcs!(
     EternalRemnant,
     jederico => "Jederico",
     phantom_legion_rook => "Phantom Legion Rook",
-    harzal => "Harzal"
+    harzal => "Harzal",
+    sigmund => "Sigmund",
+    giant_worm => "Giant Worm",
+    magmadon => "Magmadon"
 );
 
 create_struct_with_npcs!(
@@ -254,6 +259,11 @@ create_struct_with_npcs!(
 );
 
 create_struct_with_npcs!(
+    MechanicalPrincess,
+    mari => "Mari"
+);
+
+create_struct_with_npcs!(
     FireElemental,
     ancient_wildfire_tyrant => "Ancient Wildfire Tyrant",
     cereon => "Cereon"
@@ -314,7 +324,10 @@ create_struct_with_npcs!(
     velkan => "Velkan",
     sigmund => "Sigmund",
     varto => "Varto",
-    corrupted_ogre => "Corrupted Ogre"
+    corrupted_ogre => "Corrupted Ogre",
+    white_mage => "White Mage",
+    tirdin => "Tirdin",
+    hybee_executioner => "Hybee Executioner"
 );
 
 create_struct_with_npcs!(
@@ -355,7 +368,8 @@ create_struct_with_npcs!(
     CubesFortune,
     full_giant_slime => "Full Giant Slime",
     greedy_tuturi => "Greedy Tuturi",
-    lost_tooki_king => "Lost Tooki King"
+    lost_tooki_king => "Lost Tooki King",
+    sparkling_crystal_dragon => "Sparkling Crystal Dragon"
 );
 
 create_struct_with_npcs!(
@@ -436,6 +450,12 @@ create_struct_with_npcs!(
 create_struct_with_npcs!(
     LostSoul,
     cube_bewitched_martial_artist => "Cube Bewitched Martial Artist"
+);
+
+create_struct_with_npcs!(
+    SoulHarvester,
+    rudric => "Rudric",
+    ghost_ship_elite => "Ghost Ship Elite"
 );
 
 create_struct_with_npcs!(
@@ -543,6 +563,11 @@ create_struct_with_npcs!(
 );
 
 create_struct_with_npcs!(
+    TealHomunculus,
+    homunculus => "Homunculus"
+);
+
+create_struct_with_npcs!(
     ShackledJudgment,
     cube_bewitched_assassin => "Cube Bewitched Assassin"
 );
@@ -604,7 +629,9 @@ create_struct_with_npcs!(
     PlagueShard,
     seal_stone => "Seal Stone",
     akkan_plague_gargoyle => "Akkan Plague Gargoyle",
-    harzal => "Harzal"
+    harzal => "Harzal",
+    young_demon_dog => "Young Demon Dog",
+    plague_bamku => "Plague Bamku"
 );
 
 create_struct_with_npcs!(
@@ -613,6 +640,12 @@ create_struct_with_npcs!(
     miru => "Miru",
     tama => "Tama",
     rotting_bloodworm => "Rotting Bloodworm"
+);
+
+create_struct_with_npcs!(
+    TheWrongPath,
+    kario => "Kario",
+    mutated_vinus_delain => "Mutated Vinus Delain"
 );
 
 #[derive(Debug, Default)]
@@ -657,6 +690,7 @@ impl<'a> Cube<'a> {
         StrongBeak::from_npc_map(npc_map); // 59
         RebelliousRenegade::from_npc_map(npc_map); // 60
         ARollingStone::from_npc_map(npc_map); // 61
+        MechanicalPrincess::from_npc_map(npc_map); // 63
         FireElemental::from_npc_map(npc_map); // 64
         PlainOrder::from_npc_map(npc_map); // 65
         HoneyComb::from_npc_map(npc_map); // 66
@@ -696,6 +730,7 @@ impl<'a> Cube<'a> {
         SelfishExecutioner::from_npc_map(npc_map); // 150
         FoulJudgment::from_npc_map(npc_map); // 151
         LostSoul::from_npc_map(npc_map); // 153
+        SoulHarvester::from_npc_map(npc_map); // 156
         VengefulMayhem::from_npc_map(npc_map); // 161
         WickedAdventurer::from_npc_map(npc_map); // 166
         NamelessElemental::from_npc_map(npc_map); // 173
@@ -718,6 +753,7 @@ impl<'a> Cube<'a> {
         ExquisiteHomunculus::from_npc_map(npc_map); // 221
         TheHeaviestGem::from_npc_map(npc_map); // 223
         ShackledAgent::from_npc_map(npc_map); // 224
+        TealHomunculus::from_npc_map(npc_map); // 226
         ShackledJudgment::from_npc_map(npc_map); // 228
         ShackledDemon::from_npc_map(npc_map); // 230
         FloweringBeast::from_npc_map(npc_map); // 234
@@ -730,8 +766,9 @@ impl<'a> Cube<'a> {
         MayhemShard::from_npc_map(npc_map); // 251
         PhantomFragment::from_npc_map(npc_map); // 256
         ShardOfDarkness::from_npc_map(npc_map); // 263
-        PlagueShard::from_npc_map(npc_map); // 263
+        PlagueShard::from_npc_map(npc_map); // 271
         CovetousShard::from_npc_map(npc_map); // 267
+        TheWrongPath::from_npc_map(npc_map); // 280
         CubesFortune::from_npc_map(npc_map); // 302
         CubesFortune::from_npc_map(npc_map); // 303
         Self {

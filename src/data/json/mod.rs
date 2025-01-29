@@ -22,6 +22,16 @@ pub static RAW_SKILL_MAP: Lazy<FxHashMap<u32, RawSkill>> = Lazy::new(|| {
     serde_json::from_slice(json_bytes).unwrap()
 });
 
+pub static HYPER_AWAKENING_TECHNIQUE_SKILL_IDS: Lazy<HashSet<u32>> = Lazy::new(|| {
+    let json_bytes = include_bytes!("./HyperAwakeningTechniqueSkillIds.json");
+    serde_json::from_slice(json_bytes).unwrap()
+});
+
+pub static AWAKENING_SKILL_IDS: Lazy<HashSet<u32>> = Lazy::new(|| {
+    let json_bytes = include_bytes!("./AwakeningSkillIds.json");
+    serde_json::from_slice(json_bytes).unwrap()
+});
+
 pub static HYPER_AWAKENING_SKILL_IDS: Lazy<HashSet<u32>> = Lazy::new(|| {
     let json_bytes = include_bytes!("./HyperAwakeningSkillIds.json");
     serde_json::from_slice(json_bytes).unwrap()
