@@ -12,6 +12,7 @@ use super::skill::{ClassSkill, Skill, Skills};
 pub struct Class<'a> {
     pub id: u32,
     pub name: &'a str,
+    pub is_generic: bool,
     pub is_support: bool
 }
 
